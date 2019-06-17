@@ -3,7 +3,8 @@
 * { box-sizing: border-box; margin: 0; padding:0; }
 
 body {
-    background-image:  url("../images/background.PNG");
+    background-image:  url("../images/newbgcolor.PNG");
+    /* background-color: #290a0a; */
     background-size: cover;
     font-family: 'Helvetica Neue', Arial, Sans-Serif;
 }
@@ -51,7 +52,7 @@ margin-top: 13%;
         font-size: 14px;
       }
     .form:focus {
-          border: 1px solid #3498db;
+          border: 1px solid #290a0a;
         }
      
       
@@ -68,7 +69,7 @@ margin-top: 13%;
      
       
       button {
-        background: #4d0099;
+        background: #290a0a;
         border:none;
         color: white;
         font-size: 18px;
@@ -97,14 +98,14 @@ margin-top: 13%;
     right: 0;    
     background:-webkit-linear-gradient(left,               
         #27ae60 0%, #27ae60 20%, 
-        #8e44ad 20%, #8e44ad 40%,
+        #290a0a 20%, #290a0a 40%,
         #3498db 40%, #3498db 60%,
         #e74c3c 60%, #e74c3c 80%,
         #f1c40f 80%, #f1c40f 100%
         );
        background:-moz-linear-gradient(left,               
         #27ae60 0%, #27ae60 20%, 
-        #8e44ad 20%, #8e44ad 40%,
+        #290a0a 20%, #290a0a 40%,
         #3498db 40%, #3498db 60%,
         #e74c3c 60%, #e74c3c 80%,
         #f1c40f 80%, #f1c40f 100%
@@ -112,6 +113,8 @@ margin-top: 13%;
       height: 5px;
       border-radius: 5px 5px 0 0;
   }
+
+  
     
  
   

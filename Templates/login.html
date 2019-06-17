@@ -11,11 +11,12 @@
 <div class="login-wrap">
         <h2>Login</h2>
         
-        <div class="form">
-          <input type="text" placeholder="Email" name="un" required />
-          <input type="password" placeholder="Password" name="pw" required />
-          <!-- <button onclick="login()"> Login </button> -->
-          <button type="submit"><a href="../Templates/property.html"> login </button></a>
+        <form name="login"  class="form">
+
+          <input type="text" id="email" placeholder="Email" name="un" required />
+          <input type="password" id="password" placeholder="Password" name="pw" required />
+          <button  type="button" onclick="check(this.form)" value="Login" >Login</button>
+          
           <a href="../Templates/register.html"> <p> Don't have an account? Register </p></a>
           <a href="../Templates/reset-password.html"> <p> Forgot Password? Reset Password </p></a>
         </div>

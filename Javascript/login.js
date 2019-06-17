@@ -1,21 +1,22 @@
-function login(){
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-        if(email == "" || password ==""){
-            alert("Please all enter credentials")
-        }
-        else{
-             if(email == "admin@admin.com" && password=="admin1234"){
-                window.location.href="post.html";
-          
-        }
-            else if(email == "user@user.com" && password=="user1234"){
-            window.location.href="property.html";
-           
-        }
+function check(form)
+        {
+            if(form.un.value == "" && form.pw.value == ""){
+                alert("Please all enter credentials")
+            }
             else{
-                alert("Wrong credentials. For testing: 'Admin' => {'email':'admin@admin.com', 'Password':'admin1234'}, 'User'=> {'email':'user@user.com', 'password':'user1234'}");
-         }
+                 if(form.un.value == "admin@gmail.com" && form.pw.value == 12345){
+                    window.location.href="property.html";
+              
+            }
+                else if(form.un.value == "user@gmail.com" && form.pw.value== 12345){
+                window.location.href="#";
+               
+            }
+                else{
+                    alert("Wrong credentials. For testing: 'Admin' => {'email':'admin@gmail.com', 'Password':'admin1234'}, 'User'=> {'email':'user@gmail.com', 'password':'user1234'}");
+             }
+            }
         }
-       
-    }
+
+           
+

@@ -1,0 +1,493 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+    /* background-color: #333; */
+    background-image: url("../images/newbgcolor.PNG");
+    background-size: cover;
+  }
+  .side-pic{
+    float: right;
+    margin-top: -30%;
+    
+  }
+  
+  
+  .featured{
+    margin-left: 50%;
+    margin-top: 3%;
+
+  }
+
+  .view{
+    margin-left: 10%;
+  }
+  .map{
+    height:200px;
+    width: 100%;
+}
+  
+  .nav {
+    height: 100%;
+    width: 100%;
+    background-color: #290a0a;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 40px;
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #dc6f6f;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+
+  .topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  table-layout: fixed;
+  width: 100%;
+  
+}
+
+table tr {
+  background-color: #f8f8f8;
+  /* border: 1px solid #ddd; */
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+.bar{
+  width: 30%;
+  /* background-color: #555; */
+  overflow: auto; 
+}
+
+.bar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* bar links on mouse-over */
+.bar a:hover {
+  background-color: #290a0a;
+}
+.active {
+  background-color: #290a0a;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #dc6f6f;
+  overflow: auto;
+}
+
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #290a0a;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #290a0a;
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+@media screen and (max-width: 600px) {
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+
+  }
+  
+  table td::before {
+    content: attr(data-label);
+    float: left;
+  }
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #666;
+}
+
+/* header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 500px;
+  border-radius: 10px;
+  margin-top: 10px;
+} */
+/* .card{
+  float: right;
+  margin-top: 40px;
+  margin-right: 80px;
+  
+} */
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; 
+}
+
+.left, .right {
+width: 25%;
+}
+
+.middle {
+width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .topnav {
+  background-color: #333;
+  overflow: hidden;
+  width: 96%;
+  height: 100px;
+  border-radius: 10px;
+} */
+/* .report{
+  float: left;
+  padding: 14px 16px;
+  color: white;
+}
+
+.logo{
+  float: left;
+  padding: 14px 16px;
+  border-radius: 25px;
+
+} */
+
+/* .topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color:#290a0a;
+  color: white;
+  border-radius: 10px;
+} */
+
+/* .active {
+  background-color: #290a0a;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav .icon {
+  display: none;
+} */
+
+.container {
+  padding: 2px 16px;
+
+}
+.post-property{
+  margin-left: 40%;
+}
+.button{
+  background-color:#290a0a;
+  cursor:pointer;
+  width:20%;
+  border-radius:5px;
+  margin-left: 10%;
+  margin-top: 2%;
+  height:30px;
+  font-size: 15px;
+  /* float: right; */
+  
+
+}
+.button a{
+  text-decoration: none;
+  color:white;
+  font-size: 150%; 
+
+}
+
+/* @media (max-width: 600px) {
+  nav, article {
+      width: 100%;
+      height: auto;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
+
+
+
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  /* background-color: #290a0a; */
+  /* color: white; */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+ margin-left: 15%
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.custom-button{
+  /* float: right; */
+  margin-left: 30%;
+  padding: 2%;
+}
+
+.columnn {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.colummn {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .columnn, .colummn, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* @media (max-width: 600px) {
+  nav, article {
+      width: 100%;
+      height: auto;
+  }
+} */
+
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}

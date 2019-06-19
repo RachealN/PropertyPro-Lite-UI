@@ -273,6 +273,7 @@ body {
 }
 
 
+
 .column {
   float: left;
   width: 50%;
@@ -305,7 +306,6 @@ width: 50%;
 }
 
 
-
 .container {
   padding: 2px 16px;
 
@@ -332,6 +332,13 @@ width: 50%;
   font-size: 150%; 
 
 }
+
+/* @media (max-width: 600px) {
+  nav, article {
+      width: 100%;
+      height: auto;
+  }
+} */
 
 @media screen and (max-width: 600px) {
   .column {
@@ -396,6 +403,13 @@ input[type=submit] {
   display: table;
   clear: both;
 }
+.frame{
+  width:100%;
+  /* margin-left: 2%; */
+}
+.footer{
+  margin-left: 50%;
+}
 
 
 
@@ -406,13 +420,15 @@ input[type=submit] {
   }
 }
 
-
+/* @media (max-width: 600px) {
+  nav, article {
+      width: 100%;
+      height: auto;
+  }
+} */
 
 @media screen and (max-width: 600px) {
   .column {
       width: 100%;
   }
 }
-
-
-

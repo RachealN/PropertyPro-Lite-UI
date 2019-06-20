@@ -55,3 +55,7 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
+
+function reset() {
+  window.location.href = '#'
+}

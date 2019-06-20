@@ -24,11 +24,11 @@ body{
   height: 33px;
   border-radius: 5px;
   outline: none;
-  /* color: #fff; */
+  color: #fff;
 }
 
 .searchTerm:focus{
-  /* color: #fff; */
+  color: #fff;
 }
 
 .searchButton {
@@ -39,7 +39,7 @@ body{
   border: 1px solid #290a0a;
   background: #290a0a;
   text-align: center;
-  /* color: #fff; */
+  color: #fff;
   border-radius: 5px;
   cursor: pointer;
   font-size: 30px;
@@ -73,6 +73,9 @@ body{
     font-size: 200%;
     font-family: Arial, Helvetica, sans-serif;
 }
+.posti{
+  margin-left: 30%;
+}
 
 .logo{
     float: left;
@@ -103,12 +106,41 @@ body{
     color: #290a0a;
   }
 
+.style-button{
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8%;
+  background-color: #290a0a;
+  padding: 8px;
+}
+
+.new-style{
+  overflow: auto; 
+}
+
+.new-style a {
+  float: right;
+  text-align: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* bar links on mouse-over */
+.new-style a:hover {
+  background-color: #290a0a;
+}
+.active {
+  background-color: #290a0a;
+}
+
 
 .push {
 	display: inline-block;
-    /* position: relative; */
-    float: right;
-    margin-right: -50%;
+  float: right;
+  margin-right: -50%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	text-transform: uppercase;
@@ -116,19 +148,14 @@ body{
 	font-weight: bold;
 	color: #fff;
 	background-color: #290a0a;
-	background-image: -webkit-linear-gradient(top, #290a0a, #290a0a);
 	padding: 10px 12px;
 	width: 120px;
 	text-align: center;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	/* text-shadow: 1px 1px 4px rgba(0, 0, 0, .5); */
-	border: 2px solid #290a0a;
-	box-shadow: 0 4px 0 #290a0a, 0 0 6px #290a0a, 1px 1px 0px #290a0a, -1px -1px 0px #290a0a, 0px 8px 10px rgba(0, 0, 0, .5);
 }
 .push:active {
-	box-shadow: 0 2px 0 #290a0a, 0 0 6px #290a0a, 1px 1px 0px #290a0a, -1px -1px 0px #290a0a, 0px 4px 10px rgba(0, 0, 0, .5);
 	top: 2px;
 }
 

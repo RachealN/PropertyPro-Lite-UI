@@ -21,9 +21,10 @@ intervention location.
 ## Project Links
 The live demo for this project can be found at:
 
+Github repository for this project:
+https://github.com/RachealN/PropertyPro-Lite-UI/tree/ft-home-page
 
-
-Github repository can be found at:
+Live demo for this project can be found at:
 https://rachealn.github.io/PropertyPro-Lite-UI/
 
 PivotalTracker link: 

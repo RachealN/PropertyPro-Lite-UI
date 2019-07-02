@@ -13,7 +13,7 @@ function check(form)
                
             }
                 else{
-                    alert("Wrong credentials. For testing: 'Admin' => {'email':'admin@gmail.com', 'Password':'admin1234'}, 'User'=> {'email':'user@gmail.com', 'password':'user1234'}");
+                    alert("Wrong credentials. For testing: 'Admin' => {'email':'admin@gmail.com', 'Password':'12345'}, 'User'=> {'email':'user@gmail.com', 'password':'12345'}");
              }
             }
         }

@@ -55,7 +55,7 @@ h2 {
         height: 40px;
         border-radius: 5px;
         outline: 0;
-        -moz-outline-style: none;
+        /* -moz-outline-style: none; */
       }
       
   input[type="text"],

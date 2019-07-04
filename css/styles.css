@@ -11,6 +11,22 @@ body{
     background-image:  url("../images/newbgcolor.PNG");
     background-size: cover;
   }
+.login-page{
+  background-color:#290a0a;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  border-radius: 10px;
+}
+.login-page .logo{
+  margin-bottom: -200px;
+}
+.login-page .lite{
+  float: left;
+  margin-left: 8%;
+  color: #fff;
+  margin-top: 3%;
+}
 .search {
   width: 100%;
   position: relative
@@ -96,9 +112,14 @@ body{
     margin-right: 25px;
     font-size: 20px;
     border: none;
-    border-radius: 8%;
+    border-radius: 5%;
     cursor: pointer;
   }
+
+.houses{
+  display: flex;
+  flex-direction: inherit;
+}
   
 .login-container button:hover {
     background: #000000;
@@ -148,7 +169,7 @@ body{
 	color: #fff;
 	background-color: #290a0a;
 	padding: 14px 18px;
-	width: 120px;
+	width: 123px;;
 	text-align: center;
 	border-radius: 5px;
 }
@@ -156,28 +177,217 @@ body{
 	top: 2px;
 }
 
-@media screen and (max-width: 500px) {
-    .login-container {
-      float: none;
+  @media (min-width: 600px)  and (max-width:850px){
+    .topnav #myTopnav{
+      display: block;
+      position: inherit;
+    }
+    .login-page .lite{
+      float: left;
+      margin-left: 13%;
+      color: #fff;
+      margin-top: 3%;
+    }
+    
+    .topnav{
+      display: inline-block;
+      height: 250px;
+      align-self: left;
+    }
+    .hide_icon{
+      float: right;
+    }
+    .login-container .new-style 
+    .logo{
+      float: left;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      width: 15%;
+    }
+    .new-style .nav-item{
+      float: left;
+    }
+    .login-page {
+      margin-top: none;
+      height:100px;
+    }
+    .login-page .logo{
+      width: 15%;
+    }
+    .lite{
+      width: 100%;
+    }
+    .feautured {
+      width: 100px;
+      position: absolute;
+      /* flex-wrap: inherit;
+      position: absolute; */
+    }
+    .houses .house1 .button2{
+      position: inherit;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   .houses{
+    display: inline-block;
+
+   }
+   .houses .house1 .logo{
+     width:100%;
+   }
+   .houses .house2 .logo{
+     width:100%;
+   }
+   .houses .house3 .logo{
+    width:100%;
+  }
+  .houses .houses1 .navbar .button2 button{
+    background-color: purple;
+    color:white !important;
+
+  }
+    .search{
+      float:absolute;
+      display: block;
+      width: 200px;
+    }
+    .home{
+      margin-top: 50px;
+      font-size: 150%;
+    }
+    .login-container button{
+      padding: 14px 18px;
+      width: 20px;
+      margin-right: 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6%;
+      text-align: right;
+      /* margin-top: 10px; */
     }
     
     .login-container button {
       float: none;
       display: block;
       text-align: left;
-      width: 100%;
+      width: 50%;
       margin: 0;
       padding: 14px;
     }
     .push{
-      float:none;
+      float:absolute;
       display: block;
-      width: 120px;
+      width: 150px;
+      margin-left: -2%;
+      
       
 
     }
      
   }
 
+  @media (min-width: 400px)  and (max-width:600px){
+    .topnav #myTopnav{
+      display: block;
+      position: inherit;
+    }
 
+    .topnav{
+      display: inline-block;
+      height: 400px;
+      align-self: left;
+    }
+
+    .login-page .lite{
+      float: left;
+      margin-left: 18%;
+      color: #fff;
+      margin-top: 3%;
+    }
+    .login-page {
+      display: inline-block;
+      margin-top: none;
+      height: 100px;
+    }
+    .login-container .new-style 
+    .logo{
+      float: left;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      width: 15%;
+    }
+    .new-style .nav-item{
+      float: left;
+    }
+    .lite{
+      width: 100%;
+    }
+    .feautured {
+      width: 100px;
+      position: absolute;
+      /* flex-wrap: inherit;
+      position: absolute; */
+    }
+    .houses .house1 .button2{
+      position: inherit;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   .houses{
+    display: inline-block;
+
+   }
+   .houses .house1 .logo{
+     width:100%;
+   }
+   .houses .house2 .logo{
+     width:100%;
+   }
+   .houses .house3 .logo{
+    width:100%;
+  }
+  .houses .houses1 .navbar .button2 button{
+    background-color: purple;
+    color:white !important;
+
+  }
+    .search{
+      float:absolute;
+      display: block;
+      width: 200px;
+    }
+    .home{
+      margin-top: 50px;
+      font-size: 150%;
+    }
+    .login-container button{
+      padding: 14px 18px;
+      width: 20px;
+      margin-right: 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6%;
+      text-align: right;
+      /* margin-top: 10px; */
+    }
+    
+    .login-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 50%;
+      margin: 0;
+      padding: 14px;
+    }
+    .push{
+      float:absolute;
+      display: block;
+      width: 150px;
+      margin-left: -2%;
+      
+      
+
+    }
+     
+  }
   

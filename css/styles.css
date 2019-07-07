@@ -9,8 +9,7 @@ body{
     background: #290a0a;
     font-family: 'Open Sans', sans-serif;
     background-color: whitesmoke;
-    /* background-image:  url("../images/newbgcolor.PNG");
-    background-size: cover; */
+    
   }
 .login-page{
   background-color:#290a0a;
@@ -28,7 +27,7 @@ body{
   color: #fff;
   margin-top: 3%;
 }
-/* .search {
+.search {
   width: 100%;
   position: relative
 }
@@ -52,7 +51,7 @@ body{
   position: absolute;  
   right: -50px;
   width: 40px;
-  height: 40px;
+  height: 48px;
   border: 1px solid #290a0a;
   background: #290a0a;
   text-align: center;
@@ -60,7 +59,7 @@ body{
   border-radius: 5px;
   cursor: pointer;
   font-size: 30px;
-} */
+}
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
@@ -83,6 +82,7 @@ body{
     margin-left: 0%;
     color: #fff;
     margin-top: 3%;
+    padding: 8px;
 }
 
 .home{
@@ -106,7 +106,7 @@ body{
   }
 
 .login-container button {
-    background-color: whitesmoke;
+    background-color: #290a0a;
     float: right;
     padding: 6px;
     margin-top: 30px;
@@ -121,10 +121,13 @@ body{
   display: flex;
   flex-direction: inherit;
 }
+.login-container button{
+  color: #fff;
+}
   
 .login-container button:hover {
-    background: #000000;
-    color: #fff;
+    background: #290a0a;
+    color: #000000;
   }
 
 .style-button{
@@ -200,14 +203,13 @@ body{
     }
     .login-container .new-style 
     .logo{
-      float: right;
-      /* margin-top: 15px;
+      float: left;
+      margin-top: 15px;
       margin-bottom: 15px;
-      width: 15%; */
+      width: 15%;
     }
     .new-style .nav-item{
-      float: none;
-      
+      float: left;
     }
     .login-page {
       margin-top: none;
@@ -217,7 +219,6 @@ body{
     .login-page .logo{
       width: 15%;
     }
-
     .lite{
       display: none;
       /* width: 100%;
@@ -253,7 +254,7 @@ body{
     .search{
       float:absolute;
       display: block;
-      /* width: 200px; */
+      width: 200px;
     }
     .home{
       margin-top: 50px;
@@ -287,14 +288,10 @@ body{
       
 
     }
-    .icon{
-      display: none;
-    }
      
   }
 
   @media (min-width: 400px)  and (max-width:600px){
-    
     .topnav #myTopnav{
       display: block;
       position: inherit;
@@ -307,11 +304,10 @@ body{
     }
 
     .login-page .lite{
-      display: none;
-      /* float: left;
+      float: left;
       margin-left: 18%;
       color: #fff;
-      margin-top: 3%; */
+      margin-top: 3%;
     }
     .login-page {
       display: inline-block;
@@ -325,19 +321,18 @@ body{
       margin-bottom: 15px;
       width: 15%;
     }
-    .login-container.new-style.icon{
-      display: none;
-    }
     .new-style .nav-item{
       float: left;
-
     }
     .lite{
-      width: 100%;
+      display: none;
+      /* width: 100%; */
     }
     .feautured {
       width: 100px;
       position: absolute;
+      /* flex-wrap: inherit;
+      position: absolute; */
     }
     .houses .house1 .button2{
       position: inherit;
@@ -365,7 +360,7 @@ body{
     .search{
       float:absolute;
       display: block;
-      /* width: 200px; */
+      width: 200px;
     }
     .home{
       margin-top: 50px;

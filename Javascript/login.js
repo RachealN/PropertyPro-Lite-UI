@@ -4,7 +4,7 @@ function check(form)
                 alert("Please all enter credentials")
             }
             else{
-                 if(form.un.value == "admin@gmail.com" && form.pw.value == 12345){
+                 if(form.un.value == "user@gmail.com" && form.pw.value == 12345){
                     window.location.href="property.html";
               
             }

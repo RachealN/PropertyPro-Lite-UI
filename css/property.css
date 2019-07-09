@@ -209,7 +209,9 @@
   }
 }
 
-
+.describe-house{
+  float: none;
+}
 
 
 * {
@@ -367,3 +369,7 @@ input[type=submit] {
       width: 100%;
   }
 }
+.describe-house{
+  float: none;
+}
+

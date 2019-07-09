@@ -36,9 +36,6 @@ The project has users(agents).
 
 
 #### login credentials
-#for admin:
-email:admin@gmail.com
-password:12345
 #for user:
 email:user@gmail.com
 password:12345

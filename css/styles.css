@@ -6,7 +6,6 @@
 }
 
 body{
-    /* background: #290a0a; */
     font-family: 'Open Sans', sans-serif;
     background-color: wheat;
     
@@ -233,8 +232,7 @@ body{
     }
     .lite{
       display: none;
-      /* width: 100%;
-      font-size: 50rem; */
+      
     }
     .feautured {
       width: 100px;

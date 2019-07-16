@@ -1,15 +1,16 @@
 function update() {
-    window.location.href = '../Templates/update-property.html'
+    location.replace('../Templates/update-property.html')
 }
 
 function post() {
-    window.location.href = '../Templates/post.html'
+    location.replace('../Templates/post.html')
 }
 
 function report() {
-    window.location.href = '../Templates/report.html'
+    location.replace('../Templates/report.html')
 }
 
 function view() {
-    window.location.href = '../Templates/description.html'
+    location.replace('../Templates/description.html')
+
 }

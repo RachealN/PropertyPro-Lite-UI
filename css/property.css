@@ -19,6 +19,32 @@
     margin-top: 1%;
 
   }
+  .foote{
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    background-color: #290a0a;
+    color: #fff;
+    /* width: 300%; */
+    border-radius: 5px;
+    margin-top: 2%;
+    height: 10%;
+    padding: 15px;
+
+  }
+  .foot{
+    position: relative;
+    bottom: 0px;
+    text-align: center;
+    background-color: #290a0a;
+    color: #fff;
+    width: 317%;
+    border-radius: 5px;
+    margin-left: -200%;
+    height: 10%;
+    padding: 15px;
+    
+  }
 
   .view{
     margin-left: 10%;
@@ -159,8 +185,8 @@
 
 .navbar {
   width: 100%;
-  background-color: #dc6f6f;
-  overflow: auto;
+  background-color: wheat;
+  /* overflow: auto; */
 }
 
 
@@ -168,21 +194,13 @@
 .navbar a {
   float: left;
   text-align: center;
-  padding: 12px;
-  color: white;
+  padding: 15px;
+  color: #290a0a;
   text-decoration: none;
   font-size: 17px;
 }
 
-/* Navbar links on mouse-over */
-.navbar a:hover {
-  background-color: #290a0a;
-}
 
-/* Current/active navbar link */
-.active {
-  background-color: #290a0a;
-}
 
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
@@ -256,11 +274,6 @@ width: 50%;
   clear: both;
 }
 
-
-.container {
-  /* padding: 2px 16px; */
-
-}
 .post-property{
   margin-left: 40%;
 }
@@ -269,11 +282,10 @@ width: 50%;
   cursor:pointer;
   width:20%;
   border-radius:5px;
-  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 2%;
   height:30px;
   font-size: 15px;
-  /* float: right; */
   
 
 }
@@ -293,7 +305,7 @@ width: 50%;
 
 
 input[type=text], select, textarea{
-  width: 50%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -307,8 +319,6 @@ label {
 }
 
 input[type=submit] {
-  /* background-color: #290a0a; */
-  /* color: white; */
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -320,8 +330,8 @@ input[type=submit] {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  width: 80%;
-  margin-left: 10%;
+  width: 50%;
+  margin: auto;
 }
 
 .custom-button{

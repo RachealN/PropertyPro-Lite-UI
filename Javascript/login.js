@@ -5,11 +5,11 @@ function check(form)
             }
             else{
                  if(form.un.value == "user@gmail.com" && form.pw.value == 12345){
-                    window.location.href="property.html";
+                    location.replace('property.html')
               
             }
                 else if(form.un.value == "agent@gmail.com" && form.pw.value== 12345){
-                window.location.href="agent.html";
+                location.replace('agent.html')
                
             }
                 else{

@@ -1,3 +1,3 @@
 function register() {
-    window.location.href = '../Templates/login.html'
+    location.replace('../Templates/login.html')
 }

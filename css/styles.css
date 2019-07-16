@@ -24,6 +24,15 @@ body{
   
 
 }
+.describe-houses{
+  /* position: relative; */
+  margin: auto; 
+  text-align: center;
+  bottom: 0px;
+  margin-left: 40%;
+  
+}
+
 .describe-house{
   /* position: relative; */
   margin: auto; 
@@ -133,7 +142,7 @@ body{
 
 .login-container {
     float: right;
-    padding: 30px;
+    padding: 9px;
   }
 
 .login-container button {
